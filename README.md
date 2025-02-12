@@ -1,6 +1,5 @@
-# SafeLock
 <div align="center">
-<img src="" alt="Logo - SafeLock" width="200" height="200">
+<img src="SafeLock/Logo-SafeLock.png" alt="Logo - SafeLock" width="200" height="200">
 </div>
 <h1 align="center"> SafeLock </h1>
 
