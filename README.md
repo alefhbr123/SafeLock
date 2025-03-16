@@ -23,7 +23,6 @@ Meu pai guardava as senhas dele em um caderno. Quando ele precisava buscar uma d
 
 ## 🏗Estrutura do projeto
 ```text
-src/
 ├── index.html       // Página de cadastro de senhas
 ├── list.html        // Página para listar, filtrar e excluir senhas
 ├── script.js        // Lógica de armazenamento, renderização e remoção (localStorage)
