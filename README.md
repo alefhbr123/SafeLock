@@ -9,9 +9,8 @@
 
 O projeto SafeLock consiste em um gerenciador de senhas para que o indivíduo não perca tempo procurando senhas avulsas.
 
-## ✍️Autor: 
-
-Álefh Trindade Luz De Lima
+## 📌Link: 
+https://alefhbr123.github.io/SafeLock/
 
 ## ⚠️Problema:
 Meu pai guardava as senhas dele em um caderno. Quando ele precisava buscar uma das senhas gastava muito tempo procurando. Assim, desenvolvi o SafeLock para auxiliar meu pai nesse processo.
