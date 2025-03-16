@@ -9,9 +9,12 @@
 
 O projeto SafeLock consiste em um gerenciador de senhas para que o indivíduo não perca tempo procurando senhas avulsas.
 
-## Autor: 
+## ✍️Autor: 
 
 Álefh Trindade Luz De Lima
+
+## ⚠️Problema:
+Meu pai guardava as senhas dele em um caderno. Quando ele precisava buscar uma das senhas gastava muito tempo procurando. Assim, desenvolvi o SafeLock para auxiliar meu pai nesse processo.
 
 ## ✔️Tecnologias utilizadas:
 - ``HTML``
@@ -19,12 +22,14 @@ O projeto SafeLock consiste em um gerenciador de senhas para que o indivíduo n�
 - ``JavaScript``
 
 ## 🏗Estrutura do projeto
-- **README.md**: Contém as informações gerais do projeto, como descrição, objetivos, equipe e estrutura.
-- **index.html**: Página principal do site ou aplicação.
-- **style.css**: Arquivo que define o layout e a estética do site ou aplicação.
-- **script.js**: Lógica JavaScript que adiciona interatividade à página.
-- **src/**: Diretório com o código-fonte do projeto. 
-  - **components/**: Componentes reutilizáveis.
-  - **services/**: Serviços como APIs ou interações externas.
-  - **utils/**: Funções utilitárias.
-- **assets/**: Recursos visuais, como imagens, ícones e outros arquivos de mídia.
+```text
+src/
+├── index.html       // Página de cadastro de senhas
+├── list.html        // Página para listar, filtrar e excluir senhas
+├── script.js        // Lógica de armazenamento, renderização e remoção (localStorage)
+├── style.css        // Estilos CSS para as páginas
+└── README.md        // Documentação do projeto
+```
+## 🔗Funcionalidades a serem adicionados:
+- Adicionar banco de dados.
+- Adicionar mais um tela para filtrar o tipo de senha a ser adicionado.
