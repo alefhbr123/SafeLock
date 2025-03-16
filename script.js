@@ -11,7 +11,6 @@ if (document.getElementById("add-button")) {
   
       const senhaData = { tipo, email, password };
   
-      // Recupera as senhas do localStorage (ou usa um array vazio)
       let senhas = JSON.parse(localStorage.getItem("senhas")) || [];
       senhas.push(senhaData);
       localStorage.setItem("senhas", JSON.stringify(senhas));
@@ -24,17 +23,14 @@ if (document.getElementById("add-button")) {
     });
   }
   
-  // Função que renderiza a tabela com as senhas salvas
   function renderTable() {
     const tableBody = document.querySelector("#data-table tbody");
-    if (!tableBody) return; // Se não houver tabela, sai da função
+    if (!tableBody) return; 
   
-    // Limpa o conteúdo atual para evitar duplicatas
     tableBody.innerHTML = "";
   
     let senhas = JSON.parse(localStorage.getItem("senhas")) || [];
   
-    // Para cada senha, cria uma linha na tabela
     senhas.forEach((senha, index) => {
       const row = document.createElement("tr");
   
@@ -50,38 +46,31 @@ if (document.getElementById("add-button")) {
       passwordCell.textContent = senha.password;
       row.appendChild(passwordCell);
   
-      // Cria a célula de ações, com botão para apagar essa senha
       const actionCell = document.createElement("td");
       const deleteButton = document.createElement("button");
       deleteButton.textContent = "Apagar";
   
       deleteButton.addEventListener("click", () => {
         if (confirm("Tem certeza que deseja apagar esta senha?")) {
-          // Remove o item do array usando o índice
           senhas.splice(index, 1);
-          // Atualiza o localStorage com o array atualizado
           localStorage.setItem("senhas", JSON.stringify(senhas));
-          // Re-renderiza a tabela para refletir a mudança
           renderTable();
         }
       });
   
       actionCell.appendChild(deleteButton);
       row.appendChild(actionCell);
-  
-      // Adiciona a linha ao corpo da tabela
       tableBody.appendChild(row);
     });
   }
-  
-  // Ao carregar a página, se estivermos na list.html, renderiza a tabela
+
   window.addEventListener("load", function () {
     if (document.getElementById("data-table")) {
       renderTable();
     }
   });
   
-  // Função para filtrar as senhas pelo tipo
+
   if (document.getElementById("search-button")) {
     document.getElementById("search-button").addEventListener("click", function () {
       const searchValue = document.getElementById("search").value.toLowerCase();
@@ -99,7 +88,6 @@ if (document.getElementById("add-button")) {
     });
   }
   
-  // Função para apagar todas as senhas
   if (document.getElementById("delete-all-button")) {
     document.getElementById("delete-all-button").addEventListener("click", function () {
       if (confirm("Tem certeza que deseja apagar todas as senhas?")) {
