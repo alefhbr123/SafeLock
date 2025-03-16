@@ -4,7 +4,6 @@
     box-sizing: border-box;
   }
   
-  /* Corpo centralizado, com fundo pastel */
   body {
     display: flex;
     justify-content: center;
@@ -14,14 +13,14 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  /* Container do formulário (o “cartão”) */
+
   .form-container {
-    background-color: #fff;               /* Fundo branco para destaque */
-    padding: 30px 40px;                  /* Espaçamento interno */
-    border-radius: 10px;                 /* Cantos arredondados */
+    background-color: #fff;              
+    padding: 30px 40px;                 
+    border-radius: 10px;                
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    width: 350px;                        /* Largura fixa */
-    max-width: 90%;                      /* Responsivo em telas menores */
+    width: 350px;                       
+    max-width: 90%;                      
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,7 +157,7 @@
     display: flex;
     width: 100%;
     gap: 10px;
-    justify-content: flex-end; /* Alinhar à direita */
+    justify-content: flex-end; 
     margin-bottom: 15px;
   }
   
@@ -189,7 +188,6 @@
     background-color: #d94a4a;
   }
   
-  /* Tabela */
   table {
     width: 100%;
     border-collapse: collapse;
