@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo centralizado, com fundo pastel */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(209, 201, 157);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Container do formulário (o “cartão”) */
+  .form-container {
+    background-color: #fff;               /* Fundo branco para destaque */
+    padding: 30px 40px;                  /* Espaçamento interno */
+    border-radius: 10px;                 /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 350px;                        /* Largura fixa */
+    max-width: 90%;                      /* Responsivo em telas menores */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Título */
+  .form-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulário organizado em coluna */
+  .form-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Labels acima dos inputs */
+  .form-container label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Inputs de texto, email e senha */
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container input[type="password"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  /* Seção que agrupa os botões */
+  .button-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .form-container button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .form-container button:hover {
+    background-color: #555;
+  }
+  
+  .btn-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Efeito hover no link-botão */
+  .btn-link:hover {
+    background-color: #555;
+  }
+
+  /* Container principal da listagem */
+.list-container {
+    background-color: #fff;               
+    padding: 30px 40px;                 
+    border-radius: 10px;                 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 550px;                        
+    max-width: 90%;                      
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Título */
+  .list-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Área de pesquisa */
+  .search-container {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Campo de pesquisa */
+  .search-container input[type="text"] {
+    flex: 1;               
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  /* Botão de pesquisa */
+  .search-container button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-container button:hover {
+    background-color: #555;
+  }
+  
+  /* Container dos botões */
+  .action-buttons {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: flex-end; /* Alinhar à direita */
+    margin-bottom: 15px;
+  }
+  
+  /* Botões gerais */
+  .action-buttons button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  .action-buttons button:hover {
+    background-color: #555;
+  }
+  
+
+  .action-buttons .danger {
+    background-color: #b33a3a;
+  }
+  
+  .action-buttons .danger:hover {
+    background-color: #d94a4a;
+  }
+  
+  /* Tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table thead {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  table tbody tr:hover {
+    background-color: #fafafa;
+  }
