@@ -15,6 +15,9 @@ https://alefhbr123.github.io/SafeLock/
 ## ⚠️Problema:
 Meu pai guardava as senhas dele em um caderno. Quando ele precisava buscar uma das senhas gastava muito tempo procurando. Assim, desenvolvi o SafeLock para auxiliar meu pai nesse processo.
 
+## 💡Solução:
+Sistema para o indivíduo cadastrar as senhas. Assim, ele vai ser direcionado para uma página onde vai poder pesquisar pela senha desejada ou apagar alguma senha cadastrada. Com isso, torna a buscando mais eficiente e rápida.
+
 ## ✔️Tecnologias utilizadas:
 - ``HTML``
 - ``CSS``
