@@ -63,5 +63,6 @@ Sistema para o indivíduo cadastrar as senhas. Assim, ele vai ser direcionado pa
 └── README.md        // Documentação do projeto
 ```
 ## 🔗Funcionalidades a serem adicionados:
-- Adicionar banco de dados.
-- Adicionar mais um tela para filtrar o tipo de senha a ser adicionado.
+- Tela de login e cadastrado.
+- Implementação do Banco de dados.
+- Tela de filtragem de senhas para cadastrar.
