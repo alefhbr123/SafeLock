@@ -1,7 +1,6 @@
 <div align="center">
-<img src="Logo-SafeLock.png" alt="Logo - SafeLock" width="200" height="200">
+<img src="LogoSafeLock.png" alt="Logo - SafeLock" width="200" height="200">
 </div>
-<h1 align="center"> SafeLock </h1>
 
 <h4 align="center"> 
     :construction:  Projeto em construção  :construction:
