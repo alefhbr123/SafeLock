@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'app_projeto_login/style.css' %}">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script>
+    function toggleSenha() {
+      const passField = document.getElementById("id_senha");
+      const icon = document.getElementById("icon-senha");
+      if (passField.type === "password") {
+        passField.type = "text";
+        icon.innerText = "visibility_off";
+      } else {
+        passField.type = "password";
+        icon.innerText = "visibility";
+      }
+    }
+
+    function toggleConfirmarSenha() {
+      const passField = document.getElementById("id_confirmar_senha");
+      const icon = document.getElementById("icon-confirmar-senha");
+      if (passField.type === "password") {
+        passField.type = "text";
+        icon.innerText = "visibility_off";
+      } else {
+        passField.type = "password";
+        icon.innerText = "visibility";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Registrar</h2>
+
+    {% if messages %}
+    <ul class="errorlist">
+      {% for message in messages %}
+      <li style="color: red;">{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <form method="post">
+      {% csrf_token %}
+
+      <label for="id_nome">{{ form.nome.label }}</label>
+      {{ form.nome }}
+      {% if form.nome.errors %}
+      <ul class="errorlist">
+        {% for error in form.nome.errors %}
+        <li style="color: red;">{{ error }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      <label for="id_email">{{ form.email.label }}</label>
+      {{ form.email }}
+      {% if form.email.errors %}
+      <ul class="errorlist">
+        {% for error in form.email.errors %}
+        <li style="color: red;">{{ error }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      <label for="id_senha">{{ form.senha.label }}</label>
+      <div class="password-wrapper">
+        {{ form.senha }}
+        <span class="material-icons toggle-password" id="icon-senha" onclick="toggleSenha()">visibility</span>
+      </div>
+      {% if form.senha.errors %}
+      <ul class="errorlist">
+        {% for error in form.senha.errors %}
+        <li style="color: red;">{{ error }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      <label for="id_confirmar_senha">{{ form.confirmar_senha.label }}</label>
+      <div class="password-wrapper">
+        {{ form.confirmar_senha }}
+        <span class="material-icons toggle-password" id="icon-confirmar-senha" onclick="toggleConfirmarSenha()">visibility</span>
+      </div>
+      {% if form.confirmar_senha.errors %}
+      <ul class="errorlist">
+        {% for error in form.confirmar_senha.errors %}
+        <li style="color: red;">{{ error }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      <div class="button-row">
+        <a href="{% url 'login' %}" class="btn-cancelar">Cancelar</a>
+        <button type="submit">Registrar</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

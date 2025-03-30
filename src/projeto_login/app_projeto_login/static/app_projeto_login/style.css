@@ -1,0 +1,263 @@
+/* Reset básico e body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d1c693;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* --------------------------------------------
+   Layout de Login / Registro (Tela SafeLock)
+--------------------------------------------- */
+.login-container-safelock {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 800px;
+  max-width: 90%;
+}
+
+.welcome-safelock {
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-safelock h2 {
+  margin-bottom: 10px;
+}
+
+.welcome-safelock p {
+  margin-bottom: 20px;
+}
+
+.welcome-safelock .btn-link {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.welcome-safelock .btn-link:hover {
+  background-color: #333;
+}
+
+.form-safelock {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-safelock h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-safelock form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-safelock label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-safelock input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-safelock button {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-safelock button:hover {
+  background-color: #333;
+}
+
+/* --------------------------------------------
+   Formulários Gerais (ex: Registrar)
+--------------------------------------------- */
+.form-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-container input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* --------------------------------------------
+   Botões de Ação (Geral)
+--------------------------------------------- */
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-row button,
+.button-row .btn-cancelar,
+.button-row .btn-link {
+  text-align: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-row button:hover,
+.button-row .btn-cancelar:hover,
+.button-row .btn-link:hover {
+  background-color: #333;
+}
+
+/* Botão vermelho para "Apagar Todas" */
+.button-row .danger {
+  background-color: #e63946;
+}
+
+.button-row .danger:hover {
+  background-color: #c82333;
+}
+
+/* --------------------------------------------
+   Estilo da Tabela (Listagem de Senhas)
+--------------------------------------------- */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.styled-table thead {
+  background-color: #f8f9fa;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* --------------------------------------------
+   Container da Lista (Senhas Cadastradas)
+--------------------------------------------- */
+.list-container {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.list-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* --------------------------------------------
+   Área de Pesquisa na Lista de Senhas
+--------------------------------------------- */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+  flex: 1;
+  height: 44px;
+  padding: 0 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.search-container .btn-link {
+  height: 44px;
+  padding: 0 20px;
+  font-size: 16px;
+  background-color: #1e1e1e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover para o botão de pesquisa */
+.search-container .btn-link:hover {
+  background-color: #333;
+}

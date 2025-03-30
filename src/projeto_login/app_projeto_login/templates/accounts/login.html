@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="{% static 'app_projeto_login/style.css' %}" />
+</head>
+<body>
+  <div class="login-container-safelock">
+    <!-- Painel esquerdo -->
+    <div class="welcome-safelock">
+      <h2>Bem-vindo!</h2>
+      <p>Não tem conta?<br>Cadastre-se!</p>
+      <a href="{% url 'register' %}" class="btn-link">Registre-se</a>
+    </div>
+
+    <!-- Painel direito -->
+    <div class="form-safelock">
+      <h2>Login</h2>
+      {% if messages %}
+      <ul>
+        {% for message in messages %}
+        <li style="color: rgb(250, 13, 13);">{{ message }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      <form method="post">
+        {% csrf_token %}
+        <label for="email">E-mail:</label>
+        {{ form.email }}
+
+        <label for="senha">Senha:</label>
+        {{ form.senha }}
+
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
