@@ -8,6 +8,12 @@
 
 O projeto SafeLock consiste em um gerenciador de senhas para que o indivíduo não perca tempo procurando senhas avulsas.
 
+## ⚠️Problema:
+Meu pai guardava as senhas dele em um caderno. Quando ele precisava buscar uma das senhas, gastava muito tempo procurando. Assim, desenvolvi o SafeLock para auxiliar meu pai nesse processo.
+
+## 💡Solução:
+Sistema para o indivíduo cadastrar as senhas. Assim, ele vai ser direcionado para uma página onde vai poder pesquisar pela senha desejada ou apagar alguma senha cadastrada. Com isso, tornando a busca mais eficiente e rápida.
+
 ## 🚀Tecnologias Utilizadas
 - ``Python``
 - ``Django``
@@ -58,13 +64,6 @@ Inicie o servidor:
 python manage.py runserver
 ```
 Acesse a aplicação pelo navegador em: http://127.0.0.1:8000/
-
-
-## ⚠️Problema:
-Meu pai guardava as senhas dele em um caderno. Quando ele precisava buscar uma das senhas, gastava muito tempo procurando. Assim, desenvolvi o SafeLock para auxiliar meu pai nesse processo.
-
-## 💡Solução:
-Sistema para o indivíduo cadastrar as senhas. Assim, ele vai ser direcionado para uma página onde vai poder pesquisar pela senha desejada ou apagar alguma senha cadastrada. Com isso, tornando a busca mais eficiente e rápida.
 
 
 ## 🔗Funcionalidades:
